@@ -1,0 +1,26 @@
+version: '3'
+services:
+  nginx:
+    image: web
+    container_name: srv_web
+    volumes:
+      - type: bind
+        source: ./nginx/html
+        target: /wiki
+      - type: bind
+        source: ./nginx/intra
+        target: /intra
+    ports:
+      - "8080:8080"
+      - "80:80"
+  bind:
+    image: bind
+    container_name: srv_dns
+    volumes:
+      - type: bind
+        source: ./bind/data
+        target: /data
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+      - "10000:10000/tcp"

@@ -1,0 +1,9 @@
+$ttl 38400
+cours.lan.	IN	SOA	55d0c40b4046.home. mail.cours.lan. (
+			1633194591
+			10800
+			3600
+			604800
+			38400 )
+cours.lan.	IN	NS	55d0c40b4046.home.
+docker.cours.lan.	IN	A	192.168.15.13

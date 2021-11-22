@@ -1,0 +1,13 @@
+no_chroot_config=0
+file_/etc/bind/named.conf.local=1633194582
+zone_1=.	2	hint	*	/usr/share/dns/root.hints
+zone_2=localhost	3	master	*	/etc/bind/db.local
+zone_0=cours.lan	1	master	*	/var/lib/bind/cours.lan.hosts
+zone_5=255.in-addr.arpa	6	master	*	/etc/bind/db.255
+version=3
+base=/var/cache/bind
+zone_4=0.in-addr.arpa	5	master	*	/etc/bind/db.0
+zone_3=127.in-addr.arpa	4	master	*	/etc/bind/db.127
+pidfile_config=/var/run/bind/run/named.pid /var/run/named.pid /var/run/named/named.pid /var/run/bind/run/named/named.pid
+pidfile=/var/run/named/named.pid
+file_/etc/bind/named.conf.default-zones=1586973591
